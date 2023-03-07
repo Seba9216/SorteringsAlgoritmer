@@ -21,7 +21,7 @@ namespace SorteringsAlgoritmer
             var pivot = ints[venstre];
             while (i <= j)
             {
-                //er vores venstre værdi mindre end pivot?
+                //er vores venstre værdi mindre end pivot? hvis det er skipper vi dem og videre i vores loop
                 while (ints[i] < pivot)
                 {
                     i++;
@@ -31,7 +31,7 @@ namespace SorteringsAlgoritmer
                 {
                     j--;
                 }
-                //Skift af variable positioner hvis vores venstre-index er mindre end højre-index 
+                //skifter vores positioner af ints[i] med ints[j] og vica versa 
                 if (i <= j)
                 {
                     int temp = ints[i];
